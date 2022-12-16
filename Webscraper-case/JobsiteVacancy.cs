@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Webscraper_case
 {
-    internal class JobsiteVacancy
+    public class JobsiteVacancy
     {
-
         public string Title { get; set; }
         public string Company { get; set; }
         public string Location { get; set; }
@@ -23,7 +22,5 @@ namespace Webscraper_case
             this.Title = title;
             this.Company = company;
         }  
-
-
     }
 }

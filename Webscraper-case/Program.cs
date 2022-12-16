@@ -22,7 +22,7 @@ using System.Xml.Serialization;
 
 namespace Webscraper
 {
-    class Scraper
+    class Program
     {
         //global variables
         static int count = 0;

@@ -14,7 +14,6 @@ namespace Webscraper_case
         public double Price { get; set; }
         public string Rating { get; set; }
 
-
         public BolProduct(string productName, string brand, double price, string rating)
         {
             this.ProductName = productName;
@@ -22,6 +21,5 @@ namespace Webscraper_case
             this.Price = price;
             this.Rating = rating;
         }
-
     }
 }
