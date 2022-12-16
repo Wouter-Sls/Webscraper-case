@@ -57,10 +57,10 @@ namespace Webscraper
             switch (choice)
             {
                 case "0": Console.WriteLine("Aplication has been succesfully stopped."); return; break;
-                case "1": generateYTVideos(); break;
-                case "2": generateJobs(); break;
-                case "3": generateBolproducts(); break;
-                default: Console.WriteLine("\n" + choice + " -> is no option. Please type a correct option."); getInput(); break;
+                case "1": GenerateYTVideos(); break;
+                case "2": GenerateJobs(); break;
+                case "3": GenerateBolproducts(); break;
+                default: Console.WriteLine("\n" + choice + " -> is no option. Please type a correct option."); GetInput(); break;
             }
         }
 
@@ -158,7 +158,7 @@ namespace Webscraper
             var orderedList = listYoutubeVideos.OrderBy(v => v.Views);
 
             //write data to json file
-            var fileName = "YoutubeVideos.json";
+            var fileName = "../../../../jsonFiles/YoutubeVideos.json";
             JsonFileUtils.SimpleWrite(orderedList, fileName);
 
             Console.WriteLine("\n\n================================================");
@@ -238,7 +238,7 @@ namespace Webscraper
                 }
 
                 //write data to json file
-                var fileName = "Jobsite.json";
+                var fileName = "../../../../jsonFiles/Jobsite.json";
                 JsonFileUtils.SimpleWrite(vacanciesList, fileName);
 
                 Console.WriteLine("\n\n========================================");
@@ -343,7 +343,7 @@ namespace Webscraper
                 var orderedList = productsList.OrderBy(p => p.Price);
 
                 //write data to json file
-                var fileName = "BolProducts.json";
+                var fileName = "../../../../jsonFiles/BolProducts.json";
                 JsonFileUtils.SimpleWrite(orderedList, fileName);
 
                 Console.WriteLine("\n\n=================================================");
