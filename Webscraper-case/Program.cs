@@ -67,6 +67,7 @@ namespace Webscraper
         //scrape methods
         static void GenerateYTVideos()
         {
+            count = 0;
             //give search term
             Console.Write("Give a Youtube search term: ");
             string searchTerm = Console.ReadLine();
@@ -183,6 +184,9 @@ namespace Webscraper
 
         static void GenerateJobs()
         {
+
+            count = 0;
+
             //give search term
             Console.Write("Give a job search term: ");
             string searchTerm = Console.ReadLine();
@@ -276,6 +280,7 @@ namespace Webscraper
 
         static void GenerateBolproducts()
         {
+            count = 0;
 
             //give search term
             Console.Write("Give a product search term: ");
